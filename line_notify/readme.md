@@ -9,25 +9,31 @@ https://notify-bot.line.me/th/
 
 คำอธิบาย
 
-setToken('ใส่token');
+include "Line_model.php";
+เพิ่มไฟล์โมเดลเข้ามาเพื่อเรียกใช้
+
+$line = new Line_Notify();
+สร้างวัตถุ ในตัวแปร $line
+
+$line->setToken('ใส่token');
 ใช้ตั้ง Token
 
-addMsg('ใส่ข้อความ');
+$line->addMsg('ใส่ข้อความ');
 เพิ่มข้อความแบบต่อข้อความได้เรื่อยๆ
 
-setMsg('ใส่ข้อความ');
+$line->setMsg('ใส่ข้อความ');
 ใส่ข้อความแบบลบข้อความก่อนหน้า (สามารถใช้ addMsg() ต่อข้อความเพิ่มได้)
 
-setSPId(1);
+$line->setSPId(1);
 ใช้ตั้ง Package Sticker
 
-setSId(6);
+$line->setSId(6);
 ใช้ตั้ง Sticker ที่ต้องการส่ง
 
-setImg('https://media.giphy.com/media/13gvXfEVlxQjDO/giphy.gif');
+$line->setImg('https://media.giphy.com/media/13gvXfEVlxQjDO/giphy.gif');
 ใช้ตั้ง รูปภาพ ที่ต้องการส่ง
 
-sendNotify();
+$line->sendNotify();
 ใช้ส่งข้อความ จะ return true เมื่อส่งสำเร็จ และ return false เมื่อส่งไม่สำเร็จ
 
 <p>***************************</p>
