@@ -4,6 +4,9 @@
 
 https://youtu.be/ZRQXvGx3hZU
 
+สมัคร Token ได้ที่
+https://notify-bot.line.me/th/
+
 <p>***************************</p>
 ฝากกดติดตามช่องยูทูปด้วยครับ
 <br>
